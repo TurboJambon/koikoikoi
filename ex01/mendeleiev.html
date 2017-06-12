@@ -1,59 +1,35 @@
 <!DOCTYPE html>
 
 <HTML>
+
 <HEAD>
-<TITLE>Tableau de Mendeleiev</TITLE>
-<STYLE>
+	<TITLE>Tableau de Mendeleiev</TITLE>
 
-p#poids
-{
-	font-size: 9px;
-	text-align:right;
-	margin-right: 8px;
-}
+	<STYLE>
+	p#poids{font-size: 9px; text-align:right; margin-right: 8px;}
+	p#num{text-align:left; margin-left: 8px;}
 
-p#num
-{
-	text-align:left;
-	margin-left: 8px;
-}
-
-div
-{
-	text-align:center;
-}
-div#empty
-{
-	width: 81px;
-	height: 80px;
-	background-color:white;
-	border: 0px;
-	border-style:solid;
-	border-right-style: none;
-	line-height:5px;
-	float:left;
-}
-div#cell
-{
-	width: 80px;
-	height: 80px;
-	background-color:green;
-	border: 1px;
-	border-style:solid;
-	border-right-style: none;
-
-	line-height:5px;
-	float:left;
-}
-</STYLE>
-</HEAD>
+	div{text-align:center;}
+	div#empty{width: 80.9px; height: 80px; background-color:white; border: 0px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#cell{width: 80px; height: 80px; background-color:pink; border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#nonmet{width: 80px; height: 80px; background-color:rgb(0, 255, 0); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#raregas{width: 80px; height: 80px; background-color:rgb(0, 255, 255); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#halo{width: 80px; height: 80px; background-color:rgb(0, 209, 255); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#postmet{width: 80px; height: 80px; background-color:rgb(0, 144, 255); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#metaloides{width: 80px; height: 80px; background-color:rgb(0, 255, 142); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#alcalinoter{width: 80px; height: 80px; background-color:rgb(255, 255, 12); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#alcalino{width: 80px; height: 80px; background-color:rgb(255, 147, 12); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#lantha{width: 80px; height: 80px; background-color:rgb(218, 155, 255); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	div#acti{width: 80px; height: 80px; background-color:rgb(218, 108, 255); border: 1px; border-style:solid; border-right-style: none; line-height:5px; float:left;}
+	</STYLE>
+</HEAD> 
 <BODY>
 	<center>
 	<H1>Tableau périodique des éléments de Mendeleiev</H1>
 	<IMG src="physique.jpeg" width=150px length=150px>
 	<BR />
 
-	<div id="cell" style="border-right-style:solid"><p id="poids">1.00794</p><h1>H</h1><p id="num">1</p></div>
+	<div id="nonmet" style="border-right-style:solid"><p id="poids">1.00794</p><h1>H</h1><p id="num">1</p></div>
 	<div id="empty"></div>
 	<div id="empty"></div>
 	<div id="empty"></div>
@@ -70,11 +46,31 @@ div#cell
 	<div id="empty"></div>
 	<div id="empty"></div>
 	<div id="empty"></div>
-	<div id="cell" style="border-right-style:solid;"><p id="poids">4.002602</p><h1>He</h1><p id="num">2</p></div>
-	<BR />
+	<div id="raregas" style="border-right-style:solid;"><p id="poids">4.002602</p><h1>He</h1><p id="num">2</p></div>
+	<br style="clear:both" />
 
-	<div id="cell""><p id="poids">6.941</p><h1>Li</h1><p id="num">3</p></div>
-	<div id="cell" style="border-right-style:solid"><p id="poids">9.012182</p><h1>Be</h1><p id="num">4</p></div>
+	<div id="alcalino""><p id="poids">6.941</p><h1>Li</h1><p id="num">3</p></div>
+	<div id="alcalinoter" style="border-right-style:solid"><p id="poids">9.012182</p><h1>Be</h1><p id="num">4</p></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="metaloides" ><p id="poids">10.811</p><h1>B</h1><p id="num">5</p></div>
+	<div id="nonmet" ><p id="poids">12.0107</p><h1>C</h1><p id="num">6</p></div>
+	<div id="nonmet" ><p id="poids">14.0067</p><h1>N</h1><p id="num">7</p></div>
+	<div id="nonmet" ><p id="poids">15.9994</p><h1>O</h1><p id="num">8</p></div>
+	<div id="halo" ><p id="poids">18.998403</p><h1>F</h1><p id="num">9</p></div>
+	<div id="raregas" style="border-right-style:solid"><p id="poids">20.1797</p><h1>Ne</h1><p id="num">10</p></div>
+	<br style="clear:both" />
+
+	<div id="alcalino""><p id="poids">22.98976</p><h1>Na</h1><p id="num">11</p></div>
+	<div id="alcalinoter" style="border-right-style:solid"><p id="poids">24.3050</p><h1>Mg</h1><p id="num">12</p></div>
 	<div id="empty" style="border-left-style:none"></div>
 	<div id="empty"></div>
 	<div id="empty"></div>
@@ -85,36 +81,16 @@ div#cell
 	<div id="empty"></div>
 	<div id="empty"></div>
 	<div id="empty"></div>
-	<div id="cell" ><p id="poids">10.811</p><h1>B</h1><p id="num">5</p></div>
-	<div id="cell" ><p id="poids">12.0107</p><h1>C</h1><p id="num">6</p></div>
-	<div id="cell" ><p id="poids">14.0067</p><h1>N</h1><p id="num">7</p></div>
-	<div id="cell" ><p id="poids">15.9994</p><h1>O</h1><p id="num">8</p></div>
-	<div id="cell" ><p id="poids">18.998403</p><h1>F</h1><p id="num">9</p></div>
-	<div id="cell" style="border-right-style:solid"><p id="poids">20.1797</p><h1>Ne</h1><p id="num">10</p></div>
-	<BR />
+	<div id="postmet" ><p id="poids">26.98153</p><h1>Al</h1><p id="num">13</p></div>
+	<div id="metaloides" ><p id="poids">28.0855</p><h1>Si</h1><p id="num">14</p></div>
+	<div id="nonmet" ><p id="poids">30.97696</p><h1>P</h1><p id="num">15</p></div>
+	<div id="nonmet" ><p id="poids">32.065</p><h1>S</h1><p id="num">16</p></div>
+	<div id="halo" ><p id="poids">35.453</p><h1>Cl</h1><p id="num">17</p></div>
+	<div id="raregas" style="border-right-style:solid"><p id="poids">39.948</p><h1>Ar</h1><p id="num">18</p></div>
+	<br style="clear:both" />
 
-	<div id="cell""><p id="poids">22.98976</p><h1>Na</h1><p id="num">11</p></div>
-	<div id="cell" style="border-right-style:solid"><p id="poids">24.3050</p><h1>Mg</h1><p id="num">12</p></div>
-	<div id="empty" style="border-left-style:none"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="empty"></div>
-	<div id="cell" ><p id="poids">26.98153</p><h1>Al</h1><p id="num">13</p></div>
-	<div id="cell" ><p id="poids">28.0855</p><h1>Si</h1><p id="num">14</p></div>
-	<div id="cell" ><p id="poids">30.97696</p><h1>P</h1><p id="num">15</p></div>
-	<div id="cell" ><p id="poids">32.065</p><h1>S</h1><p id="num">16</p></div>
-	<div id="cell" ><p id="poids">35.453</p><h1>Cl</h1><p id="num">17</p></div>
-	<div id="cell" style="border-right-style:solid"><p id="poids">39.948</p><h1>Ar</h1><p id="num">18</p></div>
-	<BR />
-
-	<div id="cell""><p id="poids">39.0983</p><h1>K</h1><p id="num">19</p></div>
-	<div id="cell" ><p id="poids">40.078</p><h1>Ca</h1><p id="num">20</p></div>
+	<div id="alcalino""><p id="poids">39.0983</p><h1>K</h1><p id="num">19</p></div>
+	<div id="alcalinoter" ><p id="poids">40.078</p><h1>Ca</h1><p id="num">20</p></div>
 	<div id="cell" ><p id="poids">44.95591</p><h1>Sc</h1><p id="num">21</p></div>
 	<div id="cell" ><p id="poids">47.867</p><h1>Ti</h1><p id="num">22</p></div>
 	<div id="cell" ><p id="poids">50.9415</p><h1>V</h1><p id="num">23</p></div>
@@ -125,34 +101,114 @@ div#cell
 	<div id="cell" ><p id="poids">58.6934</p><h1>Ni</h1><p id="num">28</p></div>
 	<div id="cell" ><p id="poids">63.546</p><h1>Cu</h1><p id="num">29</p></div>
 	<div id="cell" ><p id="poids">65.38</p><h1>Zn</h1><p id="num">30</p></div>
-	<div id="cell" ><p id="poids">69.723</p><h1>Ga</h1><p id="num">31</p></div>
-	<div id="cell" ><p id="poids">72.64</p><h1>Ge</h1><p id="num">32</p></div>
-	<div id="cell" ><p id="poids">74.92160</p><h1>As</h1><p id="num">33</p></div>
-	<div id="cell" ><p id="poids">78.96</p><h1>Se</h1><p id="num">34</p></div>
-	<div id="cell" ><p id="poids">79.904</p><h1>Br</h1><p id="num">35</p></div>
-	<div id="cell" style="border-right-style:solid"><p id="poids">83.798</p><h1>Kr</h1><p id="num">36</p></div>
-	<BR />
+	<div id="postmet" ><p id="poids">69.723</p><h1>Ga</h1><p id="num">31</p></div>
+	<div id="metaloides" ><p id="poids">72.64</p><h1>Ge</h1><p id="num">32</p></div>
+	<div id="metaloides" ><p id="poids">74.92160</p><h1>As</h1><p id="num">33</p></div>
+	<div id="nonmet" ><p id="poids">78.96</p><h1>Se</h1><p id="num">34</p></div>
+	<div id="halo" ><p id="poids">79.904</p><h1>Br</h1><p id="num">35</p></div>
+	<div id="raregas" style="border-right-style:solid"><p id="poids">83.798</p><h1>Kr</h1><p id="num">36</p></div>
+	<br style="clear:both" />
 
-	<div id="cell""><p id="poids">85.4678</p><h1>K</h1><p id="num">19</p></div>
-	<div id="cell" ><p id="poids">87.62</p><h1>Ca</h1><p id="num">20</p></div>
-	<div id="cell" ><p id="poids">88.90585</p><h1>Sc</h1><p id="num">21</p></div>
-	<div id="cell" ><p id="poids">91.224</p><h1>Ti</h1><p id="num">22</p></div>
-	<div id="cell" ><p id="poids">92.90638</p><h1>V</h1><p id="num">23</p></div>
-	<div id="cell" ><p id="poids">95.96</p><h1>Cr</h1><p id="num">24</p></div>
-	<div id="cell" ><p id="poids">98</p><h1>Mn</h1><p id="num">25</p></div>
-	<div id="cell" ><p id="poids">55.845</p><h1>Fe</h1><p id="num">26</p></div>
-	<div id="cell" ><p id="poids">59.93319</p><h1>Co</h1><p id="num">27</p></div>
-	<div id="cell" ><p id="poids">58.6934</p><h1>Ni</h1><p id="num">28</p></div>
-	<div id="cell" ><p id="poids">63.546</p><h1>Cu</h1><p id="num">29</p></div>
-	<div id="cell" ><p id="poids">65.38</p><h1>Zn</h1><p id="num">30</p></div>
-	<div id="cell" ><p id="poids">69.723</p><h1>Ga</h1><p id="num">31</p></div>
-	<div id="cell" ><p id="poids">72.64</p><h1>Ge</h1><p id="num">32</p></div>
-	<div id="cell" ><p id="poids">74.92160</p><h1>As</h1><p id="num">33</p></div>
-	<div id="cell" ><p id="poids">78.96</p><h1>Se</h1><p id="num">34</p></div>
-	<div id="cell" ><p id="poids">79.904</p><h1>Br</h1><p id="num">35</p></div>
-	<div id="cell" style="border-right-style:solid"><p id="poids">83.798</p><h1>Kr</h1><p id="num">36</p></div>
-	<BR />
+	<div id="alcalino""><p id="poids">85.4678</p><h1>Rb</h1><p id="num">37</p></div>
+	<div id="alcalinoter" ><p id="poids">87.62</p><h1>Sr</h1><p id="num">38</p></div>
+	<div id="cell" ><p id="poids">88.90585</p><h1>Y</h1><p id="num">39</p></div>
+	<div id="cell" ><p id="poids">91.224</p><h1>Zr</h1><p id="num">40</p></div>
+	<div id="cell" ><p id="poids">92.90638</p><h1>Nb</h1><p id="num">41</p></div>
+	<div id="cell" ><p id="poids">95.96</p><h1>Mo</h1><p id="num">42</p></div>
+	<div id="cell" ><p id="poids">98</p><h1>Tc</h1><p id="num">43</p></div>
+	<div id="cell" ><p id="poids">101.07</p><h1>Ru</h1><p id="num">44</p></div>
+	<div id="cell" ><p id="poids">102.905</p><h1>Rh</h1><p id="num">45</p></div>
+	<div id="cell" ><p id="poids">106.42</p><h1>Pd</h1><p id="num">46</p></div>
+	<div id="cell" ><p id="poids">107.8682</p><h1>Ag</h1><p id="num">47</p></div>
+	<div id="cell" ><p id="poids">112.411</p><h1>Cd</h1><p id="num">48</p></div>
+	<div id="postmet" ><p id="poids">114.818</p><h1>In</h1><p id="num">49</p></div>
+	<div id="postmet" ><p id="poids">118.710</p><h1>Sn</h1><p id="num">50</p></div>
+	<div id="metaloides" ><p id="poids">121.760</p><h1>Sb</h1><p id="num">51</p></div>
+	<div id="metaloides" ><p id="poids">127.60</p><h1>Te</h1><p id="num">52</p></div>
+	<div id="halo" ><p id="poids">126.904</p><h1>I</h1><p id="num">53</p></div>
+	<div id="raregas" style="border-right-style:solid"><p id="poids">131.293</p><h1>Xe</h1><p id="num">54</p></div>
+	<br style="clear:both" />
 
+	<div id="alcalino""><p id="poids">132.905</p><h1>Cs</h1><p id="num">55</p></div>
+	<div id="alcalinoter" ><p id="poids">137.327</p><h1>Ba</h1><p id="num">56</p></div>
+	<div id="cell" ><p id="poids"><h1><BR /><BR /><BR />57-71</h1></div>
+	<div id="cell" ><p id="poids">178.49</p><h1>Hf</h1><p id="num">72</p></div>
+	<div id="cell" ><p id="poids">180.947</p><h1>Ta</h1><p id="num">73</p></div>
+	<div id="cell" ><p id="poids">183.84</p><h1>W</h1><p id="num">74</p></div>
+	<div id="cell" ><p id="poids">186.207</p><h1>Re</h1><p id="num">75</p></div>
+	<div id="cell" ><p id="poids">190.23</p><h1>Os</h1><p id="num">76</p></div>
+	<div id="cell" ><p id="poids">192.217</p><h1>Ir</h1><p id="num">77</p></div>
+	<div id="cell" ><p id="poids">195.084</p><h1>Pt</h1><p id="num">78</p></div>
+	<div id="cell" ><p id="poids">196.966</p><h1>Au</h1><p id="num">79</p></div>
+	<div id="cell" ><p id="poids">200.59</p><h1>Hg</h1><p id="num">80</p></div>
+	<div id="postmet" ><p id="poids">204.38</p><h1>Tl</h1><p id="num">81</p></div>
+	<div id="postmet" ><p id="poids">207.2</p><h1>Pb</h1><p id="num">82</p></div>
+	<div id="postmet" ><p id="poids">208.980</p><h1>Bi</h1><p id="num">83</p></div>
+	<div id="metaloides" ><p id="poids">209</p><h1>Po</h1><p id="num">84</p></div>
+	<div id="halo" ><p id="poids">210</p><h1>At</h1><p id="num">85</p></div>
+	<div id="raregas" style="border-right-style:solid"><p id="poids">222</p><h1>Rn</h1><p id="num">86</p></div>
+	<br style="clear:both" />
+
+	<div id="alcalino""><p id="poids">223</p><h1>Fr</h1><p id="num">87</p></div>
+	<div id="alcalinoter" ><p id="poids">226</p><h1>Ra</h1><p id="num">88</p></div>
+	<div id="cell" ><p id="poids"><h1><BR /><BR /><BR /><small>89-103</small></h1></div>
+	<div id="cell" ><p id="poids">267</p><h1>Rf</h1><p id="num">104</p></div>
+	<div id="cell" ><p id="poids">268</p><h1>Db</h1><p id="num">105</p></div>
+	<div id="cell" ><p id="poids">271</p><h1>Sg</h1><p id="num">106</p></div>
+	<div id="cell" ><p id="poids">272</p><h1>Bh</h1><p id="num">107</p></div>
+	<div id="cell" ><p id="poids">270</p><h1>Hs</h1><p id="num">108</p></div>
+	<div id="cell" ><p id="poids">276</p><h1>Mt</h1><p id="num">109</p></div>
+	<div id="cell" ><p id="poids">281</p><h1>Ds</h1><p id="num">110</p></div>
+	<div id="cell" ><p id="poids">280</p><h1>Rg</h1><p id="num">111</p></div>
+	<div id="cell" ><p id="poids">285</p><h1>Cn</h1><p id="num">112</p></div>
+	<div id="postmet" ><p id="poids">284</p><h1>Nh</h1><p id="num">113</p></div>
+	<div id="postmet" ><p id="poids">289</p><h1>Fl</h1><p id="num">114</p></div>
+	<div id="postmet" ><p id="poids">288</p><h1>Mc</h1><p id="num">115</p></div>
+	<div id="postmet" ><p id="poids">293</p><h1>Lv</h1><p id="num">116</p></div>
+	<div id="halo" ><p id="poids">294</p><h1>Ts</h1><p id="num">117</p></div>
+	<div id="raregas" style="border-right-style:solid"><p id="poids">294</p><h1>Og</h1><p id="num">118</p></div>
+	<br style="clear:both" /><br style="clear:both" /><br style="clear:both" />
+
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="lantha" ><p id="poids">138.905</p><h1>La</h1><p id="num">57</p></div>
+	<div id="lantha" ><p id="poids">140.116</p><h1>Ce</h1><p id="num">58</p></div>
+	<div id="lantha" ><p id="poids">140.907</p><h1>Pr</h1><p id="num">59</p></div>
+	<div id="lantha" ><p id="poids">144.242</p><h1>Nd</h1><p id="num">60</p></div>
+	<div id="lantha" ><p id="poids">145</p><h1>Pm</h1><p id="num">61</p></div>
+	<div id="lantha" ><p id="poids">150.36</p><h1>Sm</h1><p id="num">62</p></div>
+	<div id="lantha" ><p id="poids">151.964</p><h1>Eu</h1><p id="num">63</p></div>
+	<div id="lantha" ><p id="poids">157.25</p><h1>Gd</h1><p id="num">64</p></div>
+	<div id="lantha" ><p id="poids">158.925</p><h1>Tb</h1><p id="num">65</p></div>
+	<div id="lantha" ><p id="poids">162.500</p><h1>Dy</h1><p id="num">66</p></div>
+	<div id="lantha" ><p id="poids">164.930</p><h1>Ho</h1><p id="num">67</p></div>
+	<div id="lantha" ><p id="poids">167.259</p><h1>Er</h1><p id="num">68</p></div>
+	<div id="lantha" ><p id="poids">168.934</p><h1>Tm</h1><p id="num">69</p></div>
+	<div id="lantha" ><p id="poids">173.054</p><h1>Yb</h1><p id="num">70</p></div>
+	<div id="lantha" style="border-right-style:solid"><p id="poids">174.9668</p><h1>Lu</h1><p id="num">71</p></div>
+	<br style="clear:both" />
+
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="empty"></div>
+	<div id="acti" ><p id="poids">138.905</p><h1>Ac</h1><p id="num">89</p></div>
+	<div id="acti" ><p id="poids">140.116</p><h1>Th</h1><p id="num">90</p></div>
+	<div id="acti" ><p id="poids">140.907</p><h1>Pa</h1><p id="num">91</p></div>
+	<div id="acti" ><p id="poids">144.242</p><h1>U</h1><p id="num">92</p></div>
+	<div id="acti" ><p id="poids">145</p><h1>Np</h1><p id="num">93</p></div>
+	<div id="acti" ><p id="poids">150.36</p><h1>Pu</h1><p id="num">94</p></div>
+	<div id="acti" ><p id="poids">151.964</p><h1>Am</h1><p id="num">95</p></div>
+	<div id="acti" ><p id="poids">157.25</p><h1>Cm</h1><p id="num">96</p></div>
+	<div id="acti" ><p id="poids">158.925</p><h1>Bk</h1><p id="num">97</p></div>
+	<div id="acti" ><p id="poids">162.500</p><h1>Cf</h1><p id="num">98</p></div>
+	<div id="acti" ><p id="poids">164.930</p><h1>Es</h1><p id="num">99</p></div>
+	<div id="acti" ><p id="poids">167.259</p><h1>Fm</h1><p id="num">100</p></div>
+	<div id="acti" ><p id="poids">168.934</p><h1>Md</h1><p id="num">101</p></div>
+	<div id="acti" ><p id="poids">173.054</p><h1>Np</h1><p id="num">102</p></div>
+	<div id="acti" style="border-right-style:solid"><p id="poids">174.9668</p><h1>Lr</h1><p id="num">103</p></div>
+	<br style="clear:both" />
+	
 	</center>
 	</BODY>
 </HTML>
